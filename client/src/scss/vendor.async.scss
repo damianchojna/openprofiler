@@ -1,0 +1,9 @@
+/* Icons */
+$fa-font-path: "~font-awesome/fonts/"; //@TODO hack, webpack have problem with resolve paths
+@import "~font-awesome/scss/variables";
+@import "~font-awesome/scss/core";
+@import "~font-awesome/scss/path";
+@import "~font-awesome/scss/icons";
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');

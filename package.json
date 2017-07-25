@@ -1,0 +1,54 @@
+{
+  "name": "openprofiler",
+  "description": "OpenProfiler distributed tracing system",
+  "version": "1.0.0",
+  "author": "Damian Chojna",
+  "license": "ISC",
+  "scripts": {
+    "watch": "node_modules/.bin/webpack --progress --colors --watch",
+    "build": "node_modules/.bin/webpack -p --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damianchojna/openprofiler.git"
+  },
+  "keywords": [
+    "profiler",
+    "tracking",
+    "benchmark"
+  ],
+  "bugs": {
+    "url": "https://github.com/damianchojna/openprofiler/issues"
+  },
+  "homepage": "https://github.com/damianchojna/openprofiler#readme",
+  "main": "server/app.js",
+  "dependencies": {
+    "app-config-node": "^2.0.1",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.4",
+    "mime-types": "^2.1.15",
+    "normalize.css": "^7.0.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "stringify-object": "^3.2.0",
+    "ws": "^3.0.0",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.0.0",
+    "webpack-bundle-analyzer": "^2.8.2"
+  }
+}

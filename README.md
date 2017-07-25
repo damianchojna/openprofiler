@@ -1,2 +1,2 @@
-# openprofiler
+# OpenProfiler
 Distributed tracing system server

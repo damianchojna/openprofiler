@@ -1,0 +1,12 @@
+.Waterfall {
+  height: 100%;
+  padding: 20px 0;
+  padding-top: 30px;
+  position: relative;
+
+  > .ui.menu {
+    height: 30px;
+    margin-top: -30px !important;
+    width: 100%;
+  }
+}

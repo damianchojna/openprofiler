@@ -57,3 +57,11 @@ typings/
 # dotenv environment variables file
 .env
 
+# IDE
+.idea
+
+# App files
+client/public/js
+client/public/css
+client/public/fonts
+client/public/webpack.html

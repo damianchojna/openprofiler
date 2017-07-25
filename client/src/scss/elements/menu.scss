@@ -1,0 +1,75 @@
+.ui.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #1B1C1D;
+  &:after {
+    content: '';
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+  }
+  &:first-child {
+    margin-top: 0rem;
+  }
+  &:last-child {
+    margin-bottom: 0rem;
+  }
+  &:not(.vertical) {
+    /* Left Floated */
+    .left.item,
+    .left.menu {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: auto !important;
+    }
+    /* Right Floated */
+    .right.item,
+    .right.menu {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: auto !important;
+    }
+  }
+  .item {
+    padding: 0.3em 0.5em;
+    position: relative;
+    vertical-align: middle;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: none;
+    /* Border */
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0%;
+      right: 0px;
+      height: 100%;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+  }
+  /* Swapped Borders */
+  .right {
+    &.item::before,
+    &.menu > .item::before {
+      right: auto;
+      left: 0;
+    }
+  }
+}
+

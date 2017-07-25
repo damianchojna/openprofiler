@@ -1,0 +1,74 @@
+.Event {
+  cursor: pointer;
+  background-color: #1a1a1a;
+  padding: 0.2em;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  font-size: 12px;
+  > div {
+    display: inline-block;
+  }
+  .strip {
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .33) inset;
+    transition: width .4s ease-in-out;
+    white-space: nowrap;
+    background-color: #a5df41;
+    background: linear-gradient(#a5df41, #4ca916);
+
+    &.err {
+      background-color: red;
+      background: linear-gradient(#f90000, #9a0000);
+    }
+  }
+}
+
+//APP Marks
+.Event {
+  .app {
+  }
+  .remote {
+    &:before {
+      content: "[";
+    }
+    &:after {
+      content: "]";
+    }
+  }
+
+  &.uploader {
+    .app {
+      //background-color: yellow;
+      //color: #010101;
+    }
+  }
+
+  &.mediasrvjsonrpc {
+    .app {
+      //background-color: teal;
+      //color:#FFF;
+    }
+  }
+
+  &.memcached {
+    .remote {
+      //background-color: #FFF;
+      //color: #1a1a1a;
+    }
+  }
+
+  &.multitransport-jsonrpc {
+    .remote {
+      //background-color: #4ca916;
+      //color: #1a1a1a;
+    }
+  }
+
+  &.mysql {
+    .remote{
+      //background-color: #e67c00;
+      //color: #1a1a1a;
+    }
+  }
+}
